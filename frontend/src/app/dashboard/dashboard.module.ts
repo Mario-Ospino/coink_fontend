@@ -9,8 +9,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../material/material.module';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { ConsultasComponent } from './components/consultas/consultas.component';
+import { ReportsComponent } from './components/reports/reports.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
@@ -25,8 +24,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 
 
+
 @NgModule({
-  declarations: [DashboardComponent, ConsultasComponent, NavegationComponent],
+  declarations: [ NavegationComponent, ReportsComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
