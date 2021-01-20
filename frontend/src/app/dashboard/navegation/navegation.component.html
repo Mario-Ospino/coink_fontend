@@ -1,35 +1,44 @@
-<div>
+<div >
   <div class="top_bar"></div>
 </div>
 
-<div><mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>
-      <div>
-      <div class="top_bar_menu"></div>
-      <div id="div-tittle-menu"><p class="tittle-menu">Menu</p></div>
-      </div>
-     
-      
-    </mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar>
-      <button id="button-menu-icon" type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon class="nav-icon" aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>CONSULTAS - <br>COMPRAS CON EL COFRE</span>
-    </mat-toolbar>
-    <router-outlet></router-outlet>
-  </mat-sidenav-content>
-</mat-sidenav-container></div>
+<div>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+      <mat-toolbar>
+        <div class="container_left_menu">
+          <div class="top_bar_menu"></div>
+          <div id="div_tittle_menu">
+            <p class="tittle-menu">Menu</p>
+          </div>
+        </div>
 
-  
+      </mat-toolbar>
+      <mat-nav-list>
 
+       
+        <a mat-list-item routerLink="/dashboard/reportes" class="links">Reportes</a>
+        <a mat-list-item href="#" class="links">Link 2</a>
+        <a mat-list-item href="#" class="links">Link 3</a>
+        <a mat-list-item href="#" class="links">Link 4</a>
+        <a mat-list-item href="#" class="links">Link 5</a>
+        <a mat-list-item href="#" class="links">Link 6</a>
+        <a mat-list-item href="#" class="links">Link 7</a>
+
+
+
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar>
+        <button id="button-menu-icon" type="button" aria-label="Toggle sidenav" mat-icon-button
+          (click)="drawer.toggle()" *ngIf="isHandset$ | async">
+          <mat-icon class="nav-icon" aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span>CONSULTAS - <br>COMPRAS CON EL COFRE</span>
+      </mat-toolbar>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

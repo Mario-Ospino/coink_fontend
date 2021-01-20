@@ -1,1 +1,42 @@
-<p>reports worksdbjsadgghs!</p>
+<div class="container">
+    <div class="div_filters">
+        <p>filtros</p>
+
+        
+      
+
+    </div>
+    <div class="div-reports">
+      <mat-card class="mat-card-reports">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <!--<th scope="col">#</th>-->
+            <th scope="col">Nombre</th>
+            <th scope="col">Cel</th>
+            <th scope="col">Email</th>
+            <th scope="col">Fecha de compra</th>
+            <th scope="col">Edad</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let item of userList | slice: (page-1) * pageSize : page * pageSize">
+            <!-- <th scope="row">{{i}}</th>-->
+            <td>
+              {{ item.nombre}}
+            </td>
+            <td>{{item.cel}}</td>
+            <td>{{ item.email}}</td>
+            <td>{{ item.fecha_de_compra}}</td>
+            <td>{{ item.edad}}</td>
+          </tr>
+          </tbody>
+        </table>
+          <ngb-pagination class="d-flex justify-content-end" [collectionSize]="userList.length" [(page)]="page" [pageSize] ="pageSize" ></ngb-pagination>
+        
+      
+      </mat-card>
+      
+    </div>
+    <div  class="download "><button class="btn">Descargar Excel</button></div>
+</div>
