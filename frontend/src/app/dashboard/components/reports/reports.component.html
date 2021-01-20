@@ -1,11 +1,48 @@
 <div class="container">
     <div class="div_filters">
-        <p>filtros</p>
+      <div class="one">
+        <mat-form-field appearance="fill">
+          <mat-label>Input</mat-label>
+          <input matInput>
+        </mat-form-field>
 
-        
-      
+      </div>
+
+      <div class="two">
+        <button class="btn btn-primary">Limpiar Filtros</button>
+      </div>
+     
+      <div class="three">
+        <form [formGroup]="form">
+          <mat-form-field appearance="legacy">
+            <mat-label>Campo</mat-label>
+            <mat-select [formControl]="foodControl" name="food">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+       
+        </form>
+      </div>
+     
+      <div class="four">
+        <form [formGroup]="form">
+          <mat-form-field class="example-full-width">
+            <input [formControl]="searchControl" name="search" matInput placeholder="" value="Buscar">
+          </mat-form-field>
+
+        </form>
+      </div>
+     
+      <div class="five">
+        <button class="btn btn-primary">Buscar</button>
+      </div>
+     
+     
 
     </div>
+
     <div class="div-reports">
       <mat-card class="mat-card-reports">
         <table class="table table-striped">

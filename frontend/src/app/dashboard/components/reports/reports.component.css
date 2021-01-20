@@ -30,12 +30,82 @@ td,th,mat-paginator{
     background-color: #004B40;
     color: white;
 }
+.download{
+    margin-top: 3%;
+}
 
 /*para desktop*/
 @media(min-width: 769px){
 
-}
+    .div_filters{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: repeat(2, 1fr);
+        margin-bottom: 30px;
+    }
+   .one{
+      grid-column: 1;
+      grid-row: 1;
+   }
+   .two{
+        grid-column: 3;
+        grid-row: 1;
+        text-align: end;
+        
+    }
+    .two button {
+        max-width: 80%;
+        width: 70%;
+        min-width: 50%;
+        background-color: #004B40
+    }
+    .three{
+        grid-column: 1;
+        grid-row: 2;
+        color: black;
+        border-color: black;
+       
+    }
+   
+    .three mat-label,mat-option{
+        background-color: white;
+        color: black;
+    }
+  
+ 
+   
+   
+    .four{
+        grid-column: 2;
+        grid-row: 2;
 
+    }
+
+    .four .example-form {
+        min-width: 150px;
+        max-width: 500px;
+        width: 100%;
+      }
+      
+     .four  .example-full-width {
+        width: 100%;
+      }
+    .five{
+        grid-column: 3;
+        grid-row: 2;
+        text-align: end;
+        
+    }
+    .five button {
+        max-width: 80%;
+        width: 70%;
+        min-width: 50%;
+        background-color: #1EE800;
+    }
+    
+
+}
+/*para moviles*/
 @media(max-width: 768px){
     .mat-card-reports,div-reports{
         overflow: scroll;

@@ -15,8 +15,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import {MatTableModule} from '@angular/material/table';
-
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
@@ -40,7 +41,9 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatListModule,
     MatTableModule,
     MatPaginatorModule,
-  
+    MatDatepickerModule,
+    MatFormFieldModule,
+ 
   ],
   exports:[
     MatGridListModule,
@@ -58,6 +61,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatListModule,
     MatTableModule ,
     MatPaginatorModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
    
    
 
