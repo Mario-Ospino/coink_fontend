@@ -21,6 +21,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 @NgModule({
   declarations: [],
@@ -43,6 +45,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatPaginatorModule,
     MatDatepickerModule,
     MatFormFieldModule,
+
+    MatNativeDateModule,
  
   ],
   exports:[
@@ -64,6 +68,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatDatepickerModule,
     MatFormFieldModule,
    
+    MatNativeDateModule,
    
 
   ],

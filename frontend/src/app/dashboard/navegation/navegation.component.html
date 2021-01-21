@@ -2,7 +2,7 @@
   <div class="top_bar"></div>
 </div>
 
-<div>
+<div class="div-container-all-menu">
   <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
@@ -16,20 +16,26 @@
 
       </mat-toolbar>
       <mat-nav-list>
-
+        <div>
+          <a mat-list-item routerLink="/dashboard/reportes" class="links">Reportes</a>
+        </div>
+        <div>
+          <a mat-list-item href="#" class="links">Link 2</a>
+          <a mat-list-item href="#" class="links">Link 3</a>
+          <a mat-list-item href="#" class="links">Link 4</a>
+          <a mat-list-item href="#" class="links">Link 5</a>
+          <a mat-list-item href="#" class="links">Link 6</a>
+          <a mat-list-item href="#" class="links">Link 7</a>
+        </div>
        
-        <a mat-list-item routerLink="/dashboard/reportes" class="links">Reportes</a>
-        <a mat-list-item href="#" class="links">Link 2</a>
-        <a mat-list-item href="#" class="links">Link 3</a>
-        <a mat-list-item href="#" class="links">Link 4</a>
-        <a mat-list-item href="#" class="links">Link 5</a>
-        <a mat-list-item href="#" class="links">Link 6</a>
-        <a mat-list-item href="#" class="links">Link 7</a>
-
-
-
+       
       </mat-nav-list>
+      <div class="div-cerrar-sesion">
+        <mat-icon class="icon-exit-to-app" aria-hidden="false" aria-label="exit_to_app">exit_to_app</mat-icon>
+        <button  mat-button color="warn" >Cerrar Sesión</button>
+      </div>
     </mat-sidenav>
+    
     <mat-sidenav-content>
       <mat-toolbar>
         <button id="button-menu-icon" type="button" aria-label="Toggle sidenav" mat-icon-button

@@ -23,20 +23,28 @@ export class ReportsComponent implements OnInit  {
     public pageSize = 10;
     public userList: Array<Usermodel> = [];
 
-
+    range:FormGroup;
     form: FormGroup;
+
   foods: Food[] = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
+    {value: 'nombre', viewValue: 'Nombre'},
+    {value: 'cel', viewValue: 'Cel'},
+    {value: 'email', viewValue: 'Email'},
+    {value: 'fecha_de_compra', viewValue: 'Fecha de compra'},
+    {value: 'edad', viewValue: 'Edad'}
   ];
   foodControl = new FormControl();
   searchControl= new FormControl();
+
   constructor( private reportsService: ReportsService ) { 
     this.form = new FormGroup({
       food: this.foodControl,
-      search: this.searchControl
-    
+      search: this.searchControl,
+    });
+
+    this.range = new FormGroup({
+      start: new FormControl(),
+      end: new FormControl()
     });
   }
 

@@ -5,14 +5,17 @@
 
 .sidenav-container {
   height: 100%;
+
 }
 
 .sidenav {
   width: 200px;
+  
 }
 
 .sidenav .mat-toolbar {
   background: inherit;
+
 }
 
 
@@ -49,7 +52,7 @@ p.tittle-menu{
 
 
 .top_bar_menu{
-  width: 370%;
+  width: 100%;
   height: 40px;
   margin-right: 50px;
   background-color: #004B40;
@@ -62,14 +65,16 @@ mat-sidenav{
   -webkit-box-shadow: 2px 0px 7px 0px rgba(50, 50, 50, 0.26);
   -moz-box-shadow:    2px 0px 7px 0px rgba(50, 50, 50, 0.26);
   box-shadow:         2px 0px 7px 0px rgba(50, 50, 50, 0.26);
+ 
 }
+
 
 .links{
   color: black;
 }
-/* Lateral derecha */ 
+/* todos los mat-toolbar - derecha e izquierda*/ 
 mat-toolbar{
-
+  padding: 0%;
   background-color: white;
 }
 span{
@@ -77,21 +82,33 @@ span{
   font-weight: 11px;
   font-size: larger;
   line-height: 120%;
+  margin-left: 2.5%;
 }
 
+.icon-exit-to-app, .div-cerrar-sesion button{
+  color:red;
+}
 
-/*media querys para desktop*/
-@media(min-width:601px){
+.div-cerrar-sesion{
+  margin-top: 90%;
+ }
+
+/*---------------------------media querys para desktop---------------------------*/
+@media(min-width:1230px){
   br{
     display: none;
   }
- 
+
+  mat-nav-list{
+    height: 55%;
+    margin-top: 5%;
+  } 
+
 }
 
 
 
-
-/*media querys para moviles*/
+/*---------------------------media querys para moviles---------------------------*/
 @media(max-width: 600px){
 
   /*barra superior*/
@@ -106,9 +123,7 @@ span{
 
 
 mat-toolbar{
-  
   height: 100px;
-  padding: 0px;
 }
 
 span{
@@ -118,4 +133,5 @@ span{
   margin-left: 0px;
   margin-top: 30px;
 }
+
 }

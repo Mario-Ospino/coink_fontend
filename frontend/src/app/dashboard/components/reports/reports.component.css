@@ -31,7 +31,8 @@ td,th,mat-paginator{
     color: white;
 }
 .download{
-    margin-top: 3%;
+    margin: 3% 0%;
+    
 }
 
 /*para desktop*/
@@ -39,7 +40,7 @@ td,th,mat-paginator{
 
     .div_filters{
         display: grid;
-        grid-template-columns: 20% 60% 20%;
+        grid-template-columns: 25% 55% 20%;
         grid-template-rows: repeat(2, 1fr);
         margin-bottom: 30px;
     }
@@ -64,14 +65,26 @@ td,th,mat-paginator{
         grid-row: 2;
         color: black;
         border-color: black;
-       
+       min-width: 261px;
     }
-   
-    .three mat-label,mat-option{
-        background-color: white;
-        color: black;
+   .div-mat-icon-search{
+     margin-left: 10px;
+     margin-right: 5px;
+     width: 25px;
+
+   }
+   .div-three{
+    display: inline-block;
+    vertical-align: middle;
+   }
+    .div-mat-form-field-campo{
+        width: 78%;
+        min-width: 200px;
+      
     }
-  
+    .three mat-form-field{
+        width: 100%;
+    }
  
    
    
