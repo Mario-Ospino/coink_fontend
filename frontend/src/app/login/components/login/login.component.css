@@ -1,5 +1,89 @@
 .div-body-login{
+    min-width: 360px;
+    padding-top: 5%;
     height: 87%;
-    background-color: #004B40;
+    min-height: 400px;
+    background-color: #003a2f;
     color: white;
+   
+ 
+}
+
+.div-grid-items{
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+   
+}
+
+.one-icon img{
+    max-width: 80px;
+    width: 50%;
+    min-width: 40px;
+}
+
+.one-icon{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    margin: 0% 10%;
+}
+
+.two-name h1{
+    font-family: 'Potta One', cursive;
+    color: #1eeb00;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.two-name h6{
+    margin-left: 1.5%;
+    letter-spacing: 0.5em;
+}
+.three-form{
+    margin: 3% 0%;
+    
+}
+
+
+.div-form{
+    min-width: 200px;
+    width: 70%;
+    max-width: 640px;
+    background-color: white;
+    border: solid #1eeb00;
+    margin: auto;
+    height: 100%;
+}
+
+.four-vinculation{
+    text-align: center;
+}
+.four-vinculation a{
+    color: white;
+    font-family: 'Josefin Slab', serif;;
+    text-decoration-line: underline;
+    font-size: 12px;
+}
+/*-----------------PARA DESKTOP-----------------*/
+@media(min-width: 601px){
+    .div-grid-items{
+        grid-template-rows: 15% 9% 60% 10%;
+    }
+  
+
+}
+
+/*-----------------PARA MOVILES-----------------*/
+@media(max-width: 600px){
+
+    .div-grid-items{
+        grid-template-rows: 15% 15% 60% 10%;
+    }
+
+   
+
+
 }

@@ -1,5 +1,7 @@
 .div-body-header{
+    /*background-color: #003a2f;*/
     background-color: red;
-    height: 5%;
+    height: 8%;
     color: white;
+    min-width: 360px;
 }

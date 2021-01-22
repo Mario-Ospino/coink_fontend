@@ -1,2 +1,2 @@
-color oscuro : #004B40
-color claro :   #1EE800
+color oscuro : #003a2f
+color claro :   #1eeb00

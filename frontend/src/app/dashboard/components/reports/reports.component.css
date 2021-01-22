@@ -27,7 +27,7 @@ td,th,mat-paginator{
 
 /*---------- Descarga ----------------------*/
 .download button{
-    background-color: #004B40;
+    background-color: #003a2f;
     color: white;
 }
 .download{
@@ -58,7 +58,7 @@ td,th,mat-paginator{
         max-width: 80%;
         width: 70%;
         min-width: 50%;
-        background-color: #004B40
+        background-color: #003a2f
     }
     .three{
         grid-column: 1;
@@ -113,7 +113,7 @@ td,th,mat-paginator{
         max-width: 80%;
         width: 70%;
         min-width: 50%;
-        background-color: #1EE800;
+        background-color: #1eeb00;
     }
     
 
