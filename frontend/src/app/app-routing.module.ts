@@ -8,7 +8,8 @@ const routes: Routes = [
   component:LayoutComponent,
   children:[
     {path:'',redirectTo:'login',pathMatch:'full'},
-    {path:'login', loadChildren: () => import ('./login/login.module').then(m => m.LoginModule)}
+    {path:'login', loadChildren: () => import ('./login/login.module').then(m => m.LoginModule)},
+    {path:'verification', loadChildren: () => import ('./verification/verification.module').then(m => m.VerificationModule)}
   ]},
   
   {path: 'dashboard',loadChildren: () => import ('./dashboard/dashboard.module').then(m => m.DashboardModule)},

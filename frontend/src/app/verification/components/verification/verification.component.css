@@ -1,0 +1,163 @@
+.div-body-login{
+    min-width: 360px;
+    padding-top: 2%;
+    height: 87%;
+    /*background-color: #004B40;*/
+    background-color: #004B40;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.div-grid-items{
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+   
+}
+
+.one-icon img{
+    max-width: 80px;
+    width: 50%;
+    min-width: 40px;
+}
+
+.one-icon{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    margin: 0% 10%;
+}
+
+.two-name h1{
+    font-family: 'Potta One', cursive;
+    color: #1eeb00;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.two-name h6{
+    
+    margin-left: 1.5%;
+    letter-spacing: 0.58em;
+}
+.three-form{
+    margin: 3% 0%;
+    
+}
+
+
+.div-form{
+    min-width: 370px;
+    width: 55%;
+    max-width: 700px;
+    background-color: white;
+    border: solid #1eeb00;
+    margin: auto;
+    height: 100%;
+    min-height: 300px;
+    max-height: 320px;
+}
+
+.four-vinculation{
+    text-align: center;
+}
+.four-vinculation a{
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    text-decoration-line: underline;
+    font-size: 12px;
+}
+
+
+/*DENTRO DEL FORMULARIO*/
+
+.div-in-form{
+    margin: 5% 15%;
+    width: 70%;
+    height: 90%;
+}
+
+.div-img-shield{
+    margin-left: 43%;
+    margin-bottom: 5%;
+    width: 45px;
+    height: 32px;
+}
+.div-in-form-title h1{
+    color:#004B40;
+    text-transform: uppercase;
+    font-size: larger;   
+}
+
+.div-in-form-title {
+    margin: auto;
+    
+}
+
+.div-in-form-message p {
+    color: #69968F;
+ 
+}
+
+.div-in-form-code mat-form-field{
+    width: 97%;
+    text-align: center;
+}
+
+
+.div-in-form-login button{
+    background-color: #1eeb00;
+    color: #004B40;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: smaller;
+    width: 35%;
+    border-radius: 100px;
+    
+
+}
+
+/*-----------------PARA DESKTOP-----------------*/
+@media(min-width: 601px){
+    .div-grid-items{
+        grid-template-rows: 14% 9% 67% 10%;
+    }
+  
+
+}
+
+/*-----------------PARA MOVILES-----------------*/
+@media(max-width: 600px){
+    .div-img-shield{
+        margin-left: 40%;
+     
+      
+    }
+    .div-body-login{
+        height: 90%;
+        /*background-color: #004B40;*/
+    }
+    .div-grid-items{
+        grid-template-rows: 15% 10% 60% 5%;
+    }
+    /*dentro del formulario*/
+    .div-in-form-title h1{
+  
+        color:#004B40;
+        text-transform: uppercase;
+        font-size: larger;   
+    }
+   
+    .div-form{
+        min-width: 200px;
+        width: 100%;
+        background-color: white;
+        border: solid #1eeb00;
+        margin: auto;
+        height: 100%;
+    }
+
+}
