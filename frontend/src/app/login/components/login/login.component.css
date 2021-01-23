@@ -2,12 +2,10 @@
     min-width: 360px;
     padding-top: 2%;
     height: 87%;
-    min-height: 400px;
     /*background-color: #004B40;*/
     background-color: #004B40;
     color: white;
-   
- 
+    width: 100%;
 }
 
 .div-grid-items{
@@ -84,9 +82,7 @@
   
     color:#004B40;
     text-transform: uppercase;
-    font-size: x-large;
-   
-   
+    font-size: x-large;   
 }
 
 .div-in-form-title {
@@ -129,11 +125,20 @@ text-decoration-line: underline;
 
 /*-----------------PARA MOVILES-----------------*/
 @media(max-width: 600px){
-
-    .div-grid-items{
-        grid-template-rows: 15% 10% 60% 10%;
+    .div-body-login{
+        height: 90%;
+        /*background-color: #004B40;*/
     }
-
+    .div-grid-items{
+        grid-template-rows: 15% 10% 60% 5%;
+    }
+    /*dentro del formulario*/
+    .div-in-form-title h1{
+  
+        color:#004B40;
+        text-transform: uppercase;
+        font-size: larger;   
+    }
    
     .div-form{
         min-width: 200px;
@@ -142,7 +147,7 @@ text-decoration-line: underline;
         border: solid #1eeb00;
         margin: auto;
         height: 100%;
-        min-width: 400px;
+        min-width: 250px;
     }
 
 }

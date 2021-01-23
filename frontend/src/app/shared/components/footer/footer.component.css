@@ -2,4 +2,20 @@
     background-color: #1eeb00;
     height: 5%;
     min-width: 360px;
+   
+
+
+}
+
+.copyright{
+    text-align: end;
+    height: 100%;
+    padding-top: 7px;
+}
+
+@media(max-width: 600px){
+  
+    .copyright{
+         text-align: center;
+    }
 }
