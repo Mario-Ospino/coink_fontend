@@ -4,6 +4,7 @@ import {RouterModule} from '@angular/router'
 
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { MaterialModule } from './../material/material.module';
 
 
 
@@ -11,7 +12,8 @@ import { HeaderComponent } from './components/header/header.component';
   declarations: [FooterComponent, HeaderComponent],
   imports: [
     CommonModule,
-    RouterModule  
+    RouterModule ,
+    MaterialModule 
   ],
   exports:[
     FooterComponent,

@@ -1,2 +1,16 @@
-color oscuro : #003a2f
+color oscuro : #004B40
 color claro :   #1eeb00
+
+
+colores imagen:
+
+Oscuro: #004B40
+Claro : #1EEB00
+
+
+
+letras 
+
+font-family: 'Potta One', cursive;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Josefin Slab', serif;;

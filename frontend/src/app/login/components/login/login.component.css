@@ -1,9 +1,10 @@
 .div-body-login{
     min-width: 360px;
-    padding-top: 5%;
+    padding-top: 2%;
     height: 87%;
     min-height: 400px;
-    background-color: #003a2f;
+    /*background-color: #004B40;*/
+    background-color: #004B40;
     color: white;
    
  
@@ -39,8 +40,9 @@
 }
 
 .two-name h6{
+    
     margin-left: 1.5%;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.58em;
 }
 .three-form{
     margin: 3% 0%;
@@ -49,13 +51,15 @@
 
 
 .div-form{
-    min-width: 200px;
-    width: 70%;
-    max-width: 640px;
+    min-width: 370px;
+    width: 40%;
+    max-width: 400px;
     background-color: white;
     border: solid #1eeb00;
     margin: auto;
     height: 100%;
+    min-height: 300px;
+    max-height: 320px;
 }
 
 .four-vinculation{
@@ -63,14 +67,61 @@
 }
 .four-vinculation a{
     color: white;
-    font-family: 'Josefin Slab', serif;;
+    font-family: 'Josefin Slab', serif;
     text-decoration-line: underline;
     font-size: 12px;
 }
+
+
+/*DENTRO DEL FORMULARIO*/
+
+.div-in-form{
+    margin: 5% 15%;
+    width: 70%;
+    height: 90%;
+}
+.div-in-form-title h1{
+  
+    color:#004B40;
+    text-transform: uppercase;
+    font-size: x-large;
+   
+   
+}
+
+.div-in-form-title {
+    margin: auto;
+    
+}
+
+.div-in-form-user mat-form-field{
+    width: 97%;
+}
+
+
+.div-in-form-login button{
+    background-color: #1eeb00;
+    color: #004B40;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: smaller;
+    width: 50%;
+    border-radius: 100px;
+    
+
+}
+.div-in-form-links a{
+color: #8D8D8D;
+text-decoration-line: underline;
+}
+.div-links{
+    margin-top: 4%;
+}
+
 /*-----------------PARA DESKTOP-----------------*/
 @media(min-width: 601px){
     .div-grid-items{
-        grid-template-rows: 15% 9% 60% 10%;
+        grid-template-rows: 14% 9% 67% 10%;
     }
   
 
@@ -80,10 +131,18 @@
 @media(max-width: 600px){
 
     .div-grid-items{
-        grid-template-rows: 15% 15% 60% 10%;
+        grid-template-rows: 15% 10% 60% 10%;
     }
 
    
-
+    .div-form{
+        min-width: 200px;
+        width: 100%;
+        background-color: white;
+        border: solid #1eeb00;
+        margin: auto;
+        height: 100%;
+        min-width: 400px;
+    }
 
 }

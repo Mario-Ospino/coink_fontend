@@ -1,7 +1,32 @@
 .div-body-header{
-    /*background-color: #003a2f;*/
-    background-color: red;
+    background-color: #004B40;
     height: 8%;
-    color: white;
     min-width: 360px;
+}
+
+
+
+.div-header-help{
+   margin-left: 1%;
+  
+}
+
+.help{
+display: inline;
+margin-right: 2px;
+
+}
+
+.help a{
+  
+    color: white;
+    font-family: 'Josefin Slab', serif;;
+    text-decoration-line: underline;
+    font-size: 12px;
+}
+
+.help mat-icon{
+
+    margin-top: 1px;
+   color: #1eeb00;
 }
