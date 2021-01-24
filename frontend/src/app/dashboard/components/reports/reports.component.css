@@ -17,7 +17,7 @@ td,th,mat-paginator{
 
 
 .mat-card-reports{
-
+    min-width: 430px;
     background-color: white;
     -webkit-box-shadow: 2px 2px 9px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    2px 2px 9px 0px rgba(50, 50, 50, 0.75);
@@ -29,6 +29,7 @@ td,th,mat-paginator{
 .download button{
     background-color: #004B40;
     color: white;
+    min-width: 150px;
 }
 .download{
     margin: 3% 0%;
@@ -45,9 +46,15 @@ td,th,mat-paginator{
         margin-bottom: 30px;
     }
    .one{
-      grid-column: 1;
-      grid-row: 1;
+        grid-column: 1;
+        grid-row: 1;
    }
+
+   .one mat-form-field{
+  
+    width: 79%;
+    min-width: 150px;
+}
    .two{
         grid-column: 3;
         grid-row: 1;
@@ -57,7 +64,7 @@ td,th,mat-paginator{
     .two button {
         max-width: 80%;
         width: 70%;
-        min-width: 50%;
+        min-width: 150px;
         background-color: #004B40
     }
     .three{
@@ -65,21 +72,22 @@ td,th,mat-paginator{
         grid-row: 2;
         color: black;
         border-color: black;
-       min-width: 261px;
+        min-width: 150px;
     }
    .div-mat-icon-search{
-     margin-left: 10px;
-     margin-right: 5px;
-     width: 25px;
+        margin-left: 10px;
+        margin-right: 5px;
+        width: 25px;
 
    }
    .div-three{
-    display: inline-block;
-    vertical-align: middle;
+        display: inline-block;
+        vertical-align: middle;
    }
     .div-mat-form-field-campo{
+        max-width: 80%;
         width: 78%;
-        min-width: 200px;
+        min-width: 120px;
       
     }
     .three mat-form-field{
@@ -112,7 +120,7 @@ td,th,mat-paginator{
     .five button {
         max-width: 80%;
         width: 70%;
-        min-width: 50%;
+        min-width: 150px;
         background-color: #1eeb00;
     }
     
@@ -122,6 +130,105 @@ td,th,mat-paginator{
 @media(max-width: 768px){
     .mat-card-reports,div-reports{
         overflow: scroll;
+    }
+
+
+    .div_filters{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, 1fr);
+       
+    }
+
+
+    /*filtro de fechas*/
+
+    .one{
+        grid-column: 1;
+        grid-row: 1;
+   }
+   .one mat-form-field{
+        width: 79%;
+        min-width: 200px;
+   }
+ /* parte del limpiar filtro */
+
+    .two{
+        grid-column: 1;
+        grid-row: 5;
+        
+        
+    }
+    .two button {
+        max-width: 160px;
+        width: 40%;
+        min-width: 150px;
+        background-color: #004B40;
+        margin-left: 39px;
+    }
+
+
+    /* parte del filtro campo*/
+
+    .three{
+        grid-column: 1;
+        grid-row: 2;
+        color: black;
+        border-color: black;
+        min-width: 261px;
+    }
+   .div-mat-icon-search{
+        margin-left: 10px;
+        margin-right: 5px;
+        width: 25px;
+
+   }
+   .div-three{
+        display: inline-block;
+        vertical-align: middle;
+   }
+    .div-mat-form-field-campo{
+        width: 78%;
+        min-width: 200px;
+      
+    }
+    .three mat-form-field{
+        width: 100%;
+    }
+
+
+    /*input de buscar*/
+    .four{
+        grid-column: 1;
+        grid-row: 3;
+
+    }
+
+    .four .example-form {
+        min-width: 150px;
+        max-width: 400px;
+      
+      
+      }
+      
+     .four  .example-full-width {
+        margin-left: 39px; 
+        width: 79%;
+      }
+
+    /*boton buscar*/
+    .five{
+        grid-column: 1;
+        grid-row: 4;
+        
+        
+    }
+    .five button {
+        max-width: 160px;
+        width: 40%;
+        min-width: 150px;
+        background-color: #1eeb00;
+        margin-left: 39px;
     }
 
 }
