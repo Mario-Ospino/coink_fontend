@@ -15,6 +15,11 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LayoutComponent } from './layout/layout.component';
 import {SharedModule} from './shared/shared.module';
+import { HttpClientModule } from '@angular/common/http';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -33,7 +38,12 @@ import {SharedModule} from './shared/shared.module';
     MatButtonModule,
     LayoutModule,
     NgbModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule,
+
+  
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

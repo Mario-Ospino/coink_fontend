@@ -8,6 +8,12 @@
     width: 100%;
 }
 
+/*SOLO FUENTES*/
+.div-in-form-title h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 .div-grid-items{
     display: grid;
     grid-template-columns: 100%;
@@ -76,13 +82,14 @@
 .div-in-form{
     margin: 5% 15%;
     width: 70%;
+
     height: 90%;
 }
 .div-in-form-title h1{
-  
+   
     color:#004B40;
     text-transform: uppercase;
-    font-size: x-large;   
+    font-size: 20px;   
 }
 
 .div-in-form-title {

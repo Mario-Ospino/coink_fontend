@@ -9,6 +9,14 @@
     text-align: center;
 }
 
+
+/*SOLO FUENTES*/
+.div-in-form-title h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
 .div-grid-items{
     display: grid;
     grid-template-columns: 100%;
@@ -32,7 +40,6 @@
 }
 
 .two-name h1{
-    font-family: 'Potta One', cursive;
     color: #1eeb00;
     text-transform: uppercase;
     text-align: center;
@@ -145,10 +152,10 @@
     }
     /*dentro del formulario*/
     .div-in-form-title h1{
-  
+        
         color:#004B40;
         text-transform: uppercase;
-        font-size: larger;   
+        font-size: 12px;   
     }
    
     .div-form{

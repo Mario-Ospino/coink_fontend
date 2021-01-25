@@ -1,12 +1,25 @@
 import { Injectable } from '@angular/core';
-
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ReportsService {
 
-  constructor() { }
+  constructor( private htttp: HttpClient) { }
+
+  ConfigUrl = 'https://api.backmerchants.bancoink.biz/qa';
+  getAllUsers(){
+    let header = new HttpHeaders().set('apikey','252156');
+    let params1 = new HttpParams().set('apiKey','252156');
+
+    //this.htttp.get<any>(this.ConfigUrl+'/pockets/reports/transactions/purchases',{params:params1});
+    return this.htttp.get<any>(
+      this.ConfigUrl+'/pockets/reports/transactions/purchases',
+      {headers:header.set('Content-Type', 'application/json')}
+      );
+
+  }
 
   getUsers(){
     let list = [];

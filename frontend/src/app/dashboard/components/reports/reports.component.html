@@ -30,9 +30,9 @@
         <div class="div-mat-form-field-campo div-three" >
           <mat-form-field appearance="legacy">
             <mat-label>Campo</mat-label>
-            <mat-select [formControl]="foodControl" name="food">
-              <mat-option *ngFor="let food of foods" [value]="food.value">
-                {{food.viewValue}}
+            <mat-select [formControl]="fieldControl" name="field">
+              <mat-option *ngFor="let report of reports" [value]="report.value">
+                {{report.viewValue}}
               </mat-option>
             </mat-select>
           </mat-form-field>
@@ -61,7 +61,7 @@
 
   <div class="div-reports">
     <mat-card class="mat-card-reports">
-      <table class="table table-striped">
+      <table  class="table table-striped">
         <thead>
           <tr>
             <!--<th scope="col">#</th>-->
