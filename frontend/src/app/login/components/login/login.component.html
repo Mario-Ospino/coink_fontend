@@ -1,49 +1,51 @@
+<form [formGroup]="formGroup" (ngSubmit)="saveFormGroup()">
+    <div class="div-body-login">
 
-<div class="div-body-login">
-
-    <div class="div-grid-items">
-        <div class="one-icon">
-            <div class="div-icon">
-                <div><img src="./../../../../assets/logo-coink-d.png" alt="Icono coink"></div>
-            </div>
-            
-        </div>
-        <div class="two-name"><h1>coink <br> <h6>empresas</h6></h1></div>
-        <div class="three-form">
-            <div class="div-form">
-                <div class="div-in-form">
-                    <div class="div-in-form-title">
-                        <h1><strong> ingresa a tu cuenta</strong></h1>
-                    </div>
-
-                    <div class="div-in-form-user">
-
-                            <mat-form-field class="example-full-width">
-                                
-                              <input matInput placeholder="usuario" value="">
-                            </mat-form-field>
-
-                            <mat-form-field >
-                                <input matInput placeholder="Contraseña" value="">
-                              </mat-form-field>
-                         
-                    </div>
+        <div class="div-grid-items">
+            <div class="one-icon">
+                <div class="div-icon">
+                    <div><img src="./../../../../assets/logo-coink-d.png" alt="Icono coink"></div>
+                </div>
                 
+            </div>
+            <div class="two-name"><h1>coink <br> <h6>empresas</h6></h1></div>
+            <div class="three-form">
+                <div class="div-form">
+                    <div class="div-in-form">
+                        <div class="div-in-form-title">
+                            <h1><strong> ingresa a tu cuenta</strong></h1>
+                        </div>
+    
+                        <div class="div-in-form-user">
+    
+                                <mat-form-field class="example-full-width">
+                                    
+                                  <input [formControl]="userControl" name="user_mail" matInput placeholder="usuario" value="">
+                                </mat-form-field>
+    
+                                <mat-form-field >
+                                    <input [formControl]="passwordControl" name="user_password" matInput placeholder="Contraseña" value="">
+                                  </mat-form-field>
+                             
+                        </div>
                     
-                    <div class="div-in-form-login">
-                        <button class="btn btn-primary">ingresar</button>
-                    </div>
-                    <div class="div-in-form-links">
-                        <div class="div-links"><a href="">Olvide mi PIN</a> </div>
-                        <div class="div-links"><a href=""> Olvide mi numero de celular empresarial</a> </div>
                         
+                        <div class="div-in-form-login">
+                            <button class="btn btn-primary" type="submit">ingresar</button>
+                        </div>
+                        <div class="div-in-form-links">
+                            <div class="div-links"><a href="">Olvide mi PIN</a> </div>
+                            <div class="div-links"><a href=""> Olvide mi numero de celular empresarial</a> </div>
+                            
+                            
+                        </div>
                         
                     </div>
-                    
                 </div>
             </div>
+            <div class="four-vinculation"><a href="">¿Quieres vincular tu empresa a Coink?</a></div>
         </div>
-        <div class="four-vinculation"><a href="">¿Quieres vincular tu empresa a Coink?</a></div>
+        
     </div>
     
-</div>
+</form>
